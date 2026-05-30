@@ -1,0 +1,16 @@
+c="AHIMOTUVWXY"
+a=input()
+a=list(a)
+b=a.copy()
+b.reverse()
+ok=True
+if a==b:
+    for k in a:
+        if k not in c:
+            print("No")
+            ok=False
+            break
+    if ok:
+        print("Yes")
+else:
+    print("No")
